@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="relative z-50 bg-white-500 w-xl mt-5">
+    <h2 class="text-center text-2xl uppercase font-bold mb-6">Inscription</h2>
+
+    <form method="POST">
+        {% csrf_token %}
+        <div class="grid grid-cols-3 gap-4">
+            {{ form }}
+        </div>
+        <p class="mb-5">
+            Déjà un compte? <a href=" {% url 'login' %} " class="text-blue-500 font-bold">Se connecter</a>
+        </p>
+        <input type="submit"
+               class="cursor-pointer text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full  px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+               value="S'inscrire"/>
+    </form>
+
+</div>
+{% endblock %}
