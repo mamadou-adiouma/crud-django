@@ -1,4 +1,4 @@
-Technos : Django - TailwindCss - JS
+Technos : Django - TailwindCss
 
 # Installer pipenv pour gérer facilement les dépendances (en évitant les conflits de dépendances) 
 pip install pipenv
